@@ -56,6 +56,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         indexSelected = indexPath.item
+        let modelName = models[indexSelected]
         
         let actionSheet = UIAlertController(title: "Choose", message: nil, preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "QuickLook", style: .default, handler: {
@@ -67,7 +68,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }))
         actionSheet.addAction(UIAlertAction(title: "SceneKit", style: .default, handler: {
             action in
-            SceneViewController.fc_pushToNavigation(self.navigationController!)
+            SceneViewController.fc_pushToNavigation(self.navigationController!, modelName: modelName)
         }))
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(actionSheet, animated: true, completion: nil)
