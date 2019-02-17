@@ -15,6 +15,16 @@
 		327A93CC2219500B00842DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A93CA2219500B00842DA7 /* LaunchScreen.storyboard */; };
 		327A93D72219500B00842DA7 /* _D_Preview_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93D62219500B00842DA7 /* _D_Preview_DemoTests.swift */; };
 		327A93E22219500B00842DA7 /* _D_Preview_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93E12219500B00842DA7 /* _D_Preview_DemoUITests.swift */; };
+		327A93F0221952DC00842DA7 /* ModelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93EF221952DC00842DA7 /* ModelListViewController.swift */; };
+		327A93F22219532A00842DA7 /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93F12219532A00842DA7 /* ModelCell.swift */; };
+		327A940D2219547F00842DA7 /* wheelbarrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94052219547F00842DA7 /* wheelbarrow.usdz */; };
+		327A940E2219547F00842DA7 /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94062219547F00842DA7 /* wateringcan.usdz */; };
+		327A940F2219547F00842DA7 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94072219547F00842DA7 /* teapot.usdz */; };
+		327A94102219547F00842DA7 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94082219547F00842DA7 /* gramophone.usdz */; };
+		327A94112219547F00842DA7 /* cupandsaucer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94092219547F00842DA7 /* cupandsaucer.usdz */; };
+		327A94122219547F00842DA7 /* redchair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A940A2219547F00842DA7 /* redchair.usdz */; };
+		327A94132219547F00842DA7 /* tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A940B2219547F00842DA7 /* tulip.usdz */; };
+		327A94142219547F00842DA7 /* plantpot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A940C2219547F00842DA7 /* plantpot.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		327A93DD2219500B00842DA7 /* 3D-Preview-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3D-Preview-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A93E12219500B00842DA7 /* _D_Preview_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _D_Preview_DemoUITests.swift; sourceTree = "<group>"; };
 		327A93E32219500B00842DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327A93EF221952DC00842DA7 /* ModelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListViewController.swift; sourceTree = "<group>"; };
+		327A93F12219532A00842DA7 /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
+		327A94052219547F00842DA7 /* wheelbarrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheelbarrow.usdz; sourceTree = "<group>"; };
+		327A94062219547F00842DA7 /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = wateringcan.usdz; sourceTree = "<group>"; };
+		327A94072219547F00842DA7 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = teapot.usdz; sourceTree = "<group>"; };
+		327A94082219547F00842DA7 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = gramophone.usdz; sourceTree = "<group>"; };
+		327A94092219547F00842DA7 /* cupandsaucer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = cupandsaucer.usdz; sourceTree = "<group>"; };
+		327A940A2219547F00842DA7 /* redchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = redchair.usdz; sourceTree = "<group>"; };
+		327A940B2219547F00842DA7 /* tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = tulip.usdz; sourceTree = "<group>"; };
+		327A940C2219547F00842DA7 /* plantpot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plantpot.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,7 @@
 		327A93BE2219500A00842DA7 /* 3D-Preview-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				327A94042219547F00842DA7 /* USDZ */,
 				327A93BF2219500A00842DA7 /* AppDelegate.swift */,
 				327A93C12219500A00842DA7 /* art.scnassets */,
 				327A93C32219500A00842DA7 /* ViewController.swift */,
@@ -106,6 +127,8 @@
 				327A93C82219500B00842DA7 /* Assets.xcassets */,
 				327A93CA2219500B00842DA7 /* LaunchScreen.storyboard */,
 				327A93CD2219500B00842DA7 /* Info.plist */,
+				327A93EF221952DC00842DA7 /* ModelListViewController.swift */,
+				327A93F12219532A00842DA7 /* ModelCell.swift */,
 			);
 			path = "3D-Preview-Demo";
 			sourceTree = "<group>";
@@ -126,6 +149,21 @@
 				327A93E32219500B00842DA7 /* Info.plist */,
 			);
 			path = "3D-Preview-DemoUITests";
+			sourceTree = "<group>";
+		};
+		327A94042219547F00842DA7 /* USDZ */ = {
+			isa = PBXGroup;
+			children = (
+				327A94052219547F00842DA7 /* wheelbarrow.usdz */,
+				327A94062219547F00842DA7 /* wateringcan.usdz */,
+				327A94072219547F00842DA7 /* teapot.usdz */,
+				327A94082219547F00842DA7 /* gramophone.usdz */,
+				327A94092219547F00842DA7 /* cupandsaucer.usdz */,
+				327A940A2219547F00842DA7 /* redchair.usdz */,
+				327A940B2219547F00842DA7 /* tulip.usdz */,
+				327A940C2219547F00842DA7 /* plantpot.usdz */,
+			);
+			path = USDZ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +272,16 @@
 			files = (
 				327A93C22219500A00842DA7 /* art.scnassets in Resources */,
 				327A93CC2219500B00842DA7 /* LaunchScreen.storyboard in Resources */,
+				327A940D2219547F00842DA7 /* wheelbarrow.usdz in Resources */,
+				327A94102219547F00842DA7 /* gramophone.usdz in Resources */,
+				327A940F2219547F00842DA7 /* teapot.usdz in Resources */,
+				327A94122219547F00842DA7 /* redchair.usdz in Resources */,
+				327A940E2219547F00842DA7 /* wateringcan.usdz in Resources */,
 				327A93C92219500B00842DA7 /* Assets.xcassets in Resources */,
+				327A94112219547F00842DA7 /* cupandsaucer.usdz in Resources */,
+				327A94132219547F00842DA7 /* tulip.usdz in Resources */,
 				327A93C72219500A00842DA7 /* Main.storyboard in Resources */,
+				327A94142219547F00842DA7 /* plantpot.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327A93F0221952DC00842DA7 /* ModelListViewController.swift in Sources */,
 				327A93C42219500A00842DA7 /* ViewController.swift in Sources */,
 				327A93C02219500A00842DA7 /* AppDelegate.swift in Sources */,
+				327A93F22219532A00842DA7 /* ModelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
