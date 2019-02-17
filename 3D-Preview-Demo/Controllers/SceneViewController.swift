@@ -8,7 +8,6 @@
 
 import UIKit
 import SceneKit
-import ARKit
 
 class SceneViewController: UIViewController {
 
@@ -22,7 +21,6 @@ class SceneViewController: UIViewController {
         sceneView.showsStatistics = true
         sceneView.allowsCameraControl = true
         sceneView.autoenablesDefaultLighting = true
-        sceneView.rendersContinuously = true
         
         let url = Bundle.main.url(forResource: modelName, withExtension: "usdz")!
         let scene = try! SCNScene(url: url, options: [.checkConsistency: true])

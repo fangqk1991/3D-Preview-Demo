@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		327A93C02219500A00842DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93BF2219500A00842DA7 /* AppDelegate.swift */; };
-		327A93C22219500A00842DA7 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 327A93C12219500A00842DA7 /* art.scnassets */; };
 		327A93C42219500A00842DA7 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93C32219500A00842DA7 /* SceneViewController.swift */; };
 		327A93C72219500A00842DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A93C52219500A00842DA7 /* Main.storyboard */; };
 		327A93C92219500B00842DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327A93C82219500B00842DA7 /* Assets.xcassets */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		327A93BC2219500A00842DA7 /* 3D-Preview-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D-Preview-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327A93BF2219500A00842DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		327A93C12219500A00842DA7 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		327A93C32219500A00842DA7 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		327A93C62219500A00842DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		327A93C82219500B00842DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				327A941522195BE800842DA7 /* Controllers */,
 				327A94042219547F00842DA7 /* USDZ */,
 				327A93BF2219500A00842DA7 /* AppDelegate.swift */,
-				327A93C12219500A00842DA7 /* art.scnassets */,
 				327A93C52219500A00842DA7 /* Main.storyboard */,
 				327A93C82219500B00842DA7 /* Assets.xcassets */,
 				327A93CA2219500B00842DA7 /* LaunchScreen.storyboard */,
@@ -179,7 +176,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327A93C22219500A00842DA7 /* art.scnassets in Resources */,
 				327A93CC2219500B00842DA7 /* LaunchScreen.storyboard in Resources */,
 				327A940D2219547F00842DA7 /* wheelbarrow.usdz in Resources */,
 				327A94102219547F00842DA7 /* gramophone.usdz in Resources */,
