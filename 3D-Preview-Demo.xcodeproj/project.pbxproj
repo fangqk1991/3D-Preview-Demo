@@ -13,7 +13,7 @@
 		327A93C72219500A00842DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A93C52219500A00842DA7 /* Main.storyboard */; };
 		327A93C92219500B00842DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327A93C82219500B00842DA7 /* Assets.xcassets */; };
 		327A93CC2219500B00842DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A93CA2219500B00842DA7 /* LaunchScreen.storyboard */; };
-		327A93F0221952DC00842DA7 /* ModelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93EF221952DC00842DA7 /* ModelListViewController.swift */; };
+		327A93F0221952DC00842DA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93EF221952DC00842DA7 /* HomeViewController.swift */; };
 		327A93F22219532A00842DA7 /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A93F12219532A00842DA7 /* ModelCell.swift */; };
 		327A940D2219547F00842DA7 /* wheelbarrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94052219547F00842DA7 /* wheelbarrow.usdz */; };
 		327A940E2219547F00842DA7 /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 327A94062219547F00842DA7 /* wateringcan.usdz */; };
@@ -34,7 +34,7 @@
 		327A93C82219500B00842DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327A93CB2219500B00842DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		327A93CD2219500B00842DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		327A93EF221952DC00842DA7 /* ModelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListViewController.swift; sourceTree = "<group>"; };
+		327A93EF221952DC00842DA7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		327A93F12219532A00842DA7 /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
 		327A94052219547F00842DA7 /* wheelbarrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheelbarrow.usdz; sourceTree = "<group>"; };
 		327A94062219547F00842DA7 /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = wateringcan.usdz; sourceTree = "<group>"; };
@@ -76,16 +76,15 @@
 		327A93BE2219500A00842DA7 /* 3D-Preview-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				327A941622195C1300842DA7 /* Views */,
+				327A941522195BE800842DA7 /* Controllers */,
 				327A94042219547F00842DA7 /* USDZ */,
 				327A93BF2219500A00842DA7 /* AppDelegate.swift */,
 				327A93C12219500A00842DA7 /* art.scnassets */,
-				327A93C32219500A00842DA7 /* SceneViewController.swift */,
 				327A93C52219500A00842DA7 /* Main.storyboard */,
 				327A93C82219500B00842DA7 /* Assets.xcassets */,
 				327A93CA2219500B00842DA7 /* LaunchScreen.storyboard */,
 				327A93CD2219500B00842DA7 /* Info.plist */,
-				327A93EF221952DC00842DA7 /* ModelListViewController.swift */,
-				327A93F12219532A00842DA7 /* ModelCell.swift */,
 			);
 			path = "3D-Preview-Demo";
 			sourceTree = "<group>";
@@ -103,6 +102,23 @@
 				327A940C2219547F00842DA7 /* plantpot.usdz */,
 			);
 			path = USDZ;
+			sourceTree = "<group>";
+		};
+		327A941522195BE800842DA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				327A93EF221952DC00842DA7 /* HomeViewController.swift */,
+				327A93C32219500A00842DA7 /* SceneViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		327A941622195C1300842DA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				327A93F12219532A00842DA7 /* ModelCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327A93F0221952DC00842DA7 /* ModelListViewController.swift in Sources */,
+				327A93F0221952DC00842DA7 /* HomeViewController.swift in Sources */,
 				327A93C42219500A00842DA7 /* SceneViewController.swift in Sources */,
 				327A93C02219500A00842DA7 /* AppDelegate.swift in Sources */,
 				327A93F22219532A00842DA7 /* ModelCell.swift in Sources */,

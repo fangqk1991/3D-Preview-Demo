@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import QuickLook
 
-class ModelListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, QLPreviewControllerDelegate, QLPreviewControllerDataSource {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, QLPreviewControllerDelegate, QLPreviewControllerDataSource {
     
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
         return 1

@@ -41,7 +41,7 @@
         <!--3D-Preview-->
         <scene sceneID="Pli-aY-kOs">
             <objects>
-                <viewController id="EIJ-Uc-pru" customClass="ModelListViewController" customModule="_D_Preview_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EIJ-Uc-pru" customClass="HomeViewController" customModule="_D_Preview_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9KX-u1-q01">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
