@@ -17,7 +17,7 @@ class ModelListViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
-        let url = Bundle.main.url(forResource: models[thumbnailIndex], withExtension: "usdz")!
+        let url = Bundle.main.url(forResource: models[indexSelected], withExtension: "usdz")!
         return url as QLPreviewItem
     }
     
@@ -25,7 +25,7 @@ class ModelListViewController: UIViewController, UICollectionViewDelegate, UICol
     let models = ["wheelbarrow", "wateringcan", "teapot", "gramophone", "cupandsaucer", "redchair", "tulip", "plantpot"]
     
     var thumbnails = [UIImage]()
-    var thumbnailIndex = 0
+    var indexSelected = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,24 +45,28 @@ class ModelListViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModelCell", for: indexPath) as? ModelCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModelCell", for: indexPath) as! ModelCell
         
-        if let cell = cell {
-            cell.modelThumbnail.image = thumbnails[indexPath.item]
-            let title = models[indexPath.item]
-            cell.modelTitle.text = title.capitalized
-        }
+        cell.modelThumbnail.image = thumbnails[indexPath.item]
+        let title = models[indexPath.item]
+        cell.modelTitle.text = title.capitalized
         
-        return cell!
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        thumbnailIndex = indexPath.item
+        indexSelected = indexPath.item
         
-        let previewController = QLPreviewController()
-        previewController.dataSource = self
-        previewController.delegate = self
-        present(previewController, animated: true)
+        let actionSheet = UIAlertController(title: "Choose", message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "QuickLook", style: .default, handler: {
+            action in
+            let previewController = QLPreviewController()
+            previewController.dataSource = self
+            previewController.delegate = self
+            self.present(previewController, animated: true)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(actionSheet, animated: true, completion: nil)
     }
     
 }
