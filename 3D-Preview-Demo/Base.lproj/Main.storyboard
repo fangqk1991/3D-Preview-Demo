@@ -13,7 +13,7 @@
         <!--Scene View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="SceneViewController" customModule="_D_Preview_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sb_SceneViewController" id="BV1-FR-VrT" customClass="SceneViewController" customModule="_D_Preview_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,6 +118,7 @@
                     <navigationItem key="navigationItem" title="3D-Preview" id="MMq-JW-fuX"/>
                     <connections>
                         <outlet property="collectionView" destination="Gzp-KT-0jv" id="dMY-qf-Q6y"/>
+                        <segue destination="BV1-FR-VrT" kind="show" id="0Jp-ib-TWx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znN-40-Km1" sceneMemberID="firstResponder"/>

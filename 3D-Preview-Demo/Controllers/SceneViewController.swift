@@ -72,4 +72,11 @@ class SceneViewController: UIViewController, ARSCNViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+    
+    // MARK: - FCViewController
+    static func fc_pushToNavigation(_ navigationController: UINavigationController) -> Void {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "sb_SceneViewController")
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

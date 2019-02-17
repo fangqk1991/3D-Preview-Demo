@@ -65,6 +65,10 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             previewController.delegate = self
             self.present(previewController, animated: true)
         }))
+        actionSheet.addAction(UIAlertAction(title: "SceneKit", style: .default, handler: {
+            action in
+            SceneViewController.fc_pushToNavigation(self.navigationController!)
+        }))
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(actionSheet, animated: true, completion: nil)
     }
